@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/styles.css.map">
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/mainplayer.scss">
+    <script src="assets/js/mainplayer.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="gameContainer">
+        <div class="menuTop">
+            <div class="menuTopLeft">
+                <div class="menuOption"><button id="button3" class="button type3"
+                        style="vertical-align:middle"><span>start
+                        </span></button></div>
+                <div class="menuOption"><button id="button1" class="button type1"
+                        style="vertical-align:middle"><span>one
+                        </span></button></div>
+                <div class="menuOption"><button id="button2" class="button type2"
+                        style="vertical-align:middle"><span>two
+                        </span></button></div>
+
+            </div>
+            <div class="menuTopRight">
+                <div class="menuOption"><button id="button4" class="button type4"
+                        style="vertical-align:middle"><span>check
+                        </span></button></div>
+            </div>
+        </div>
+        <div id="level1" class="main remove">
+            <div id="apple1" class="gameItem dropzone"> <img src="assets/images/apple.png" alt=""> </div>
+            <div id="orange1" class="gameItem dropzone"> <img src="assets/images/orange.png" alt=""> </div>
+            <div id="cherry1" class="gameItem dropzone"> <img src="assets/images/cherry.png" alt=""> </div>
+            <div id="pear1" class="gameItem dropzone"> <img src="assets/images/pear.png" alt=""> </div>
+            <div id="watermelon1" class="gameItem dropzone"> <img src="assets/images/watermelon.png" alt=""> </div>
+        </div>
+        <div id="level2" class="main remove">
+            <div id="fear1" class="gameItem2 dropzone"> <img src="assets/images/fear.png" alt=""> </div>
+            <div id="happy1" class="gameItem2 dropzone"> <img src="assets/images/happy.png" alt=""> </div>
+            <div id="angry1" class="gameItem2 dropzone"> <img src="assets/images/angry.png" alt=""> </div>
+            <div id="sad1" class="gameItem2 dropzone"> <img src="assets/images/sad.png" alt=""> </div>
+            <div id="surprise1" class="gameItem2 dropzone"> <img src="assets/images/surprise.png" alt=""> </div>
+        </div>
+        
+        <div id="pointCheck" class="main remove">
+
+            <div class="points" id="points">
+
+            </div>
+
+        </div>
+        <div id="gameStart" class="main">
+
+            <div id="start" class="start">
+                <p>START!</p>
+            </div>
+
+        </div>
+        <div class="menuBottom">
+            <div id="drag1" class="gameDrag remove">
+                <div id="pear2" class="gameAnswer draggable">
+                    <p>Pear</p>
+                </div>
+                <div id="cherry2" class="gameAnswer draggable">
+                    <p>Cherry</p>
+                </div>
+                <div id="orange2" class="gameAnswer draggable">
+                    <p>Orange</p>
+                </div>
+                <div id="apple2" class="gameAnswer draggable">
+                    <p>Apple</p>
+                </div>
+                <div id="watermelon2" class="gameAnswer draggable">
+                    <p>Watermelon</p>
+                </div>
+
+            </div>
+            <div id="drag2" class="gameDrag remove">
+                <div id="happy2" class="gameAnswer draggable">
+                    <p>Happy</p>
+                </div>
+                <div id="sad2" class="gameAnswer draggable">
+                    <p>Sad</p>
+                </div>
+                <div id="fear2" class="gameAnswer draggable">
+                    <p>Scared</p>
+                </div>
+                <div id="angry2" class="gameAnswer draggable">
+                    <p>Angry</p>
+                </div>
+                <div id="surprise2" class="gameAnswer draggable">
+                    <p>Surprised</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

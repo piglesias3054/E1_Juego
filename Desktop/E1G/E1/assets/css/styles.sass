@@ -1,0 +1,232 @@
+html, body
+    margin: 0
+    padding: 0
+    height: 100%
+    overflow: hidden
+    box-sizing: border-box
+
+.gameContainer
+    display: grid
+    height: 90%
+    margin: 2rem 12rem 2rem 12rem
+    grid-template-columns: 1fr
+    grid-template-rows: 5rem repeat(1, 1fr) 5rem
+    grid-row-gap: 1rem
+
+.menuTop
+    grid-area: 1 / 1 / 2 / 2
+    background-color: #ffcece
+    display: flex
+    justify-content: space-between
+
+.menuTopLeft
+    display: flex
+    align-items: center
+    padding: 1rem
+
+.menuTopRight
+    display: flex
+    align-items: center
+    padding: 1rem
+
+.menuOption
+    height: 3rem
+    width: 3rem
+    background-color: red
+    margin-right: 0.3rem
+
+.main
+    grid-area: 2 / 1 / 3 / 1
+    background-color: #ffcece
+    display: flex
+    justify-content: center
+    align-items: center
+
+.gameItem
+    margin: 1rem
+    height: 8rem
+    width: 8rem
+    border-radius: 10rem
+    box-sizing: border-box
+    opacity: 0.6
+
+.gameItem img
+    max-height: 13rem
+    align-self: center
+    position: relative
+    top: -4rem
+    left: -1.8rem
+    width: auto
+
+.gameItem2
+    opacity: 0.6
+
+.gameItem2 img
+    max-height: 11rem
+    align-self: center
+    position: relative
+    margin: auto
+    width: auto
+
+.menuBottom
+    grid-area: 3 / 1 / 4 / 2
+    background-color: #ffcece
+
+.gameDrag
+    display: flex
+    align-items: center
+    padding: 1rem
+    justify-content: space-evenly
+
+.gameAnswer
+    height: 3rem
+    box-sizing: border-box
+
+    width: auto
+    margin-right: 0.3rem
+    justify-content: center
+    align-self: center
+    background-color: white
+    border-radius: 0.75em
+    cursor: pointer
+
+.gameAnswer p
+    font-family: wawi
+    font-size: 1.5rem
+    margin: 1rem
+
+    // drag & drop
+
+.dropActivated
+    opacity: 0.8
+    border: 2px solid #fff0f0
+
+.dragActivated
+    opacity: 0.8
+    border: 2px solid #d86b6b
+
+.correctAnswer
+    opacity: 1
+
+// Display none
+
+.displayNone
+    display: none
+
+// TopMenu
+
+.button
+    height: 3rem
+    width: 3rem
+    font-family: wawi
+    border: none
+    color: white
+    text-align: center
+    text-decoration: none
+    display: inline-block
+    font-size: 1.2rem
+
+.button span
+    cursor: pointer
+    display: inline-block
+    position: relative
+    transition: 0.5s
+
+.button:hover span
+    font-size: 1.1rem
+
+.button:active
+    border: none
+
+.button:focus
+    border: none
+
+.type1
+    background-color: #ca4747
+
+.type2
+    background-color: #27b0c9
+
+.type3
+    background-color: #ff7d9e
+
+.type4
+    width: auto
+    background-color: #ffad7d
+
+.point
+    opacity: 1
+
+.points p
+    font-size: 3rem
+    font-family: wawi
+    line-height: 0rem
+    text-align: center
+    color: white
+    align-self: center
+
+.remove
+    display: none
+
+.level2
+    display: none
+
+// start
+
+.start p
+    font-size: 3rem
+    font-family: wawi
+    color: white
+    align-self: center
+
+// responsive
+
+@media only screen and (max-width: 1200px)
+    .menuTop
+        max-width: 100%
+        display: flex
+
+    .menuBottom
+        flex-wrap: wrap
+
+        
+            
+
+
+    .main
+        flex-wrap: wrap
+        max-width: 100%
+
+        img
+            margin: 0
+            height: 11rem
+            
+    
+    #level2 img
+        margin: 0
+        height: 10rem
+
+    .gameContainer
+        display: grid
+        height: 90%
+        margin: 2rem 1rem 2rem 1rem
+
+@media only screen and (max-width: 550px)
+    .main
+        flex-wrap: wrap
+        width: 100%
+
+        img
+            margin: 0
+
+    .menuBottom
+        height: 5rem
+        .gameDrag
+            flex-wrap: wrap
+
+    .gameContainer
+        display: grid
+        height: 100%
+        margin: 1rem 1rem 1rem 1rem
+
+
